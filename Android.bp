@@ -509,7 +509,7 @@ install_symlink {
 
 install_symlink {
     name: "rfs_msm_mpss_readonly_firmware_symlink",
-    vendor: true,
+    vendor: false,
     installed_location: "rfs/msm/mpss/readonly/firmware",
     symlink_target: select(soong_config_variable("rfs", "msm_mpss_firmware_symlink_target"), {
         "firmware": "/firmware",
